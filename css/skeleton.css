@@ -28,7 +28,7 @@
 */
 
 .outerbox {
-  background-color: #eaf1f6;
+  background-color: hsl(180, 75%, 95%);
   border: 20px solid #fff;
   width: 100%;
   height: 100vh;
@@ -37,13 +37,20 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  animation: spin 15s linear infinite;
+  animation: animateBackgroundColor 10s linear infinite;
 }
 
-@keyframes spin {
-  @for $i from 0 through 360 {
-    #{$i / 3.6}% {background-color: hsl($i, 50%, 50%);}
-  }
+@keyframes animateBackgroundColor {
+  from, to { background-color: hsl(180, 75%, 95%); }
+  10%      { background-color: hsl(216, 75%, 95%); }
+  20%      { background-color: hsl(252, 75%, 96%); }
+  30%      { background-color: hsl(288, 75%, 97%); }
+  40%      { background-color: hsl(324, 75%, 99%); }
+  50%      { background-color: hsl(0, 75%, 99%); }
+  60%      { background-color: hsl(36, 75%, 97%); }
+  70%      { background-color: hsl(72, 75%, 96%); }
+  80%      { background-color: hsl(108, 75%, 95%); }
+  90%      { background-color: hsl(144, 75%, 95%); }
 }
 
 .avatar-img {
@@ -170,7 +177,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*davidseal*/
   color: #4a5055;
-  background-color: #eaf1f6;
+  background-color: hsl(180, 75%, 95%);
   display: block;
   height: 100%;
   }
