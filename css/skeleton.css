@@ -44,11 +44,11 @@
   from, to { background-color: hsl(180, 85%, 95%); }
   10%      { background-color: hsl(216, 85%, 95%); }
   20%      { background-color: hsl(252, 85%, 96%); }
-  30%      { background-color: hsl(288, 85%, 96%); }
-  40%      { background-color: hsl(324, 85%, 96%); }
+  30%      { background-color: hsl(288, 85%, 97%); }
+  40%      { background-color: hsl(324, 85%, 97%); }
   50%      { background-color: hsl(0, 85%, 96%); }
-  60%      { background-color: hsl(36, 85%, 96%); }
-  70%      { background-color: hsl(72, 85%, 96%); }
+  60%      { background-color: hsl(36, 90%, 95%); }
+  70%      { background-color: hsl(72, 90%, 95%); }
   80%      { background-color: hsl(108, 85%, 95%); }
   90%      { background-color: hsl(144, 85%, 95%); }
 }
