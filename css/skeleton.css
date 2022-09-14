@@ -81,7 +81,7 @@ ul.social-list {
 }
 ul.social-list > li {
   display: inline-block;
-  padding: 0px 8px;
+  padding: 0px 10px;
 }
  ul.social-list > li:hover {
   opacity: 50%;
@@ -481,6 +481,16 @@ there.
   .avatar-img {
     width: 100px;
     height: 100px;
+  }
+  
+  ul.social-list > li { 
+    padding: 0px 15px;
+  }
+  
+  body {
+    font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.7;
+    font-weight: 300;
   }
 }
 
