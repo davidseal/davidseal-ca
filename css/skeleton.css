@@ -85,14 +85,7 @@ ul.social-list > li {
 }
  ul.social-list > li:hover {
   opacity: 50%;
-  background-color: #2779BF;
 }
-
-/* ul.social-list > li > a {
-  color: white;
-  text-decoration: none;
-}
- */
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
