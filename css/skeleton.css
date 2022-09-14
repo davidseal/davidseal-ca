@@ -75,6 +75,23 @@
   transform: translateY(-50%);
 }
 
+ul.social-list {
+  padding-left: 0px;
+  background-color: #3D99CE;
+  text-align: center;
+}
+ul.social-list > li {
+  display: inline-block;
+  padding: 0px 0px;
+}
+/* ul.social-list > li:hover {
+  background-color: #2779BF;
+} */
+ul.social-list > li > a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
