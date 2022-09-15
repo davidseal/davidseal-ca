@@ -469,7 +469,7 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 300px) {
+@media (min-width: 1px) {
   .outerbox {
     border: 10px solid #fff;
   }
@@ -490,7 +490,6 @@ there.
   body {
     font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.7;
-    font-weight: 300;
   }
 }
 
@@ -502,6 +501,11 @@ there.
 
   .bio-p {
     width: 365px;
+  }
+  
+  body {
+    font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.8;
   }
 }
 
