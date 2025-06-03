@@ -1,0 +1,276 @@
+:root {
+  --bg-color: #032124;
+  --heading-color: #E2D9BD;
+  --text-color: #F8F5F0;
+  --link-color: #E2D9BD;
+  --font-body: 'Raleway', sans-serif;
+  --font-heading: 'DM Serif Text', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  padding: 20px;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 100%;
+  max-width: 169px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Wave Hand Animation */
+/* .wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-animation 2s ease-in-out 1;
+} */
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-animation 2s ease-in-out 1;
+  animation-delay: 1.0s; /* matches the end of h1 fade-in (delay-2) */
+  opacity: 1;
+}
+/* Fade in the emoji first */
+@keyframes fadeInHand {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--heading-color);
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs and Lists */
+p {
+  margin-bottom: 1.2em;
+  text-align: left;
+}
+
+ul {
+  margin-bottom: 1.2em;
+  padding-left: 1.2em;
+  text-align: left;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 1em;
+  text-align: left;
+  display: flex;
+  gap: 1em;
+}
+
+.icon-button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-transition: -webkit-transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.icon-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.icon-button img {
+  width: 20px;
+  height: 20px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+/* Section Dividers (skeuomorphic style) */
+section {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-top: 2px solid transparent;
+  -webkit-border-image: -webkit-linear-gradient(to right, #04191b, #0d2b2e, #04191b) 1;
+  border-image: linear-gradient(to right, #04191b, #0d2b2e, #04191b) 1;
+  border-image-slice: 1;
+  text-align: left;
+}
+
+section:first-of-type {
+  border-top: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.9em;
+  color: var(--heading-color);
+}
+
+footer p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Fade-in Animations */
+.fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.delay-1  { animation-delay: 0.2s; }
+.delay-2  { animation-delay: 0.8s; }
+.delay-3  { animation-delay: 2.6s; }
+.delay-4  { animation-delay: 3.4s; }
+.delay-5  { animation-delay: 4.2s; }
+.delay-6  { animation-delay: 5.0s; }
+.delay-7  { animation-delay: 5.8s; }
+.delay-8  { animation-delay: 6.6s; }
+.delay-9  { animation-delay: 7.4s; }
+.delay-10 { animation-delay: 8.2s; }
+.delay-11 { animation-delay: 9.0s; }
+
+/* Responsive Tweaks */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .avatar {
+    max-width: 120px;
+  }
+
+  .links {
+    justify-content: flex-start;
+  }
+
+  .icon-button {
+    width: 40px;
+    height: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .icon-button img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Avatar and h1: start centered, animate to left */
+.avatar.align-animate, h1.align-animate {
+  transition: none;
+}
+.avatar.align-animate {
+  margin-left: 0;
+  margin-right: 0;
+}
+.avatar.left-align {
+  margin-left: 0;
+  margin-right: 0;
+}
+h1.align-animate {
+  text-align: center;
+}
+h1.left-align {
+  text-align: center;
+}
